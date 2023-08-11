@@ -1,0 +1,4 @@
+ 2023-05-23 14:43:52,041 ERROR - [m1 ->m1111] day1.Testapp.m1(Testapp.java:38) 38 
+ 2023-05-23 14:43:52,041 INFO - [main ->info messahe] day1.Testapp.main(Testapp.java:29) 29 
+ 2023-05-23 14:43:52,057 DEBUG - [main ->debug message] day1.Testapp.main(Testapp.java:30) 30 
+ 2023-05-23 14:43:52,057 ERROR - [main ->jaGXJh] day1.Testapp.main(Testapp.java:31) 31 
