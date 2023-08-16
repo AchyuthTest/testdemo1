@@ -26,7 +26,6 @@ public class twq {
 		driver.findElement(By.id("pickfiles")).click();
 		Runtime.getRuntime().exec("E:\\AutoIT_Files\\auscript1.exe");
 		Thread.sleep(15000);
-		driver.quit();
 	}
 	@Test
 	public void mousehover() throws InterruptedException {
@@ -41,15 +40,16 @@ public class twq {
 		WebElement fashion_ele3 = driver.findElement(By.xpath("//li[@class='hl-cat-nav__js-tab']//a[contains(text(),'Fashion')]"));
 		Actions action = new Actions(driver);
 		action.moveToElement(electronices_ele1).perform();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		action.moveToElement(motors_ele2).perform();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		action.moveToElement(fashion_ele3).perform();
+		Thread.sleep(2000);
 		}
 	
 	@AfterTest
 	public void tear() {
-        driver.close();
+        driver.quit();
 	}
 
 }
