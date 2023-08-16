@@ -10,6 +10,7 @@ public abstract class abs {
 		  Object hbch = null;
 		  SoftAssert s1 = new SoftAssert();
 		  s1.assertEquals(null,hbch);
+		  System.out.println("bbb");
 	  }
 	
 	abstract void m2();
