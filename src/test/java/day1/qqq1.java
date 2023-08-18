@@ -10,7 +10,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class twq {
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class qqq1 {
 	
 	WebDriver driver;
 	ChromeOptions option;
@@ -18,15 +20,14 @@ public class twq {
 	@BeforeTest
 	public void browseropen() {
 		//WebDriverManager.edgedriver().setup();
-		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		//option = new EdgeOptions();
 		option = new ChromeOptions();
 		//option.addArguments("--remote-allow-origins=*");
-		option.setBrowserVersion("116");
         driver = new ChromeDriver(option);
 		//driver = new EdgeDriver(option);
-		//driver = new ChromeDriver();
         driver.manage().window().maximize();
+        System.out.println(driver);
 	}
     
 	@Test

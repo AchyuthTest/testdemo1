@@ -5,7 +5,9 @@
     <classes>
       <class name="day1.twq">
         <methods>
-          <include name="ss"/>
+          <include name="tear"/>
+          <include name="mousehover"/>
+          <include name="browseropen"/>
         </methods>
       </class> <!-- day1.twq -->
     </classes>
